@@ -35,7 +35,9 @@ const Login: React.FC = () => {
         onSubmit={formik.handleSubmit}
         className="bg-white p-6 rounded shadow-md w-full max-w-sm absolute"
       >
-        <h2 className="text-2xl font-bold mb-4 text-center">Login</h2>
+        <h2 className="text-3xl text-blue-700 font-bold mb-4 text-center">
+          Login
+        </h2>
 
         <div className="mb-4">
           <label
@@ -51,6 +53,7 @@ const Login: React.FC = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.email}
+            placeholder="Enter your email"
             className={`mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm ${
               formik.touched.email && formik.errors.email
                 ? "border-red-500"
@@ -76,6 +79,7 @@ const Login: React.FC = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.password}
+            placeholder="Enter your password"
             className={`mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm ${
               formik.touched.password && formik.errors.password
                 ? "border-red-500"
@@ -90,7 +94,7 @@ const Login: React.FC = () => {
         <div>
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700 "
+            className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition ease-out duration-500 "
           >
             Login
           </button>
