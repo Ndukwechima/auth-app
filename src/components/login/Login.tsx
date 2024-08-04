@@ -32,7 +32,7 @@ const Login: React.FC = () => {
           </div>
           <form
             onSubmit={formik.handleSubmit}
-            className="w-[90%] lg:max-w-[30%] mx-auto bg-white p-6 rounded md:shadow-sm "
+            className="w-[90%] lg:max-w-[40%] mx-auto bg-white p-6 rounded md:shadow-sm "
           >
             <div className="">
               <Link to="/">
@@ -110,10 +110,10 @@ const Login: React.FC = () => {
                 Login
               </button>
               <div className="flex justify-between items-center mt-2">
-                <p>Forgot password?</p>
+                <p className="text-sm">Forgot password?</p>
                 <Link
                   to="/reset-password"
-                  className="text-blue-500 font-semibold underline cursor-pointer"
+                  className="text-blue-500 font-semibold underline cursor-pointer text-sm"
                 >
                   Reset password
                 </Link>
