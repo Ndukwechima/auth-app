@@ -9,6 +9,8 @@ export interface RegisterForm {
   confirmPassword: string;
 }
 
+import { ReactNode } from "react";
+
 export interface ResetPasswordForm {
   email: string;
 }
@@ -17,4 +19,8 @@ export interface OTPForm {
   otp: string;
   newPassword: string;
   confirmPassword: string;
+}
+
+export interface PageProps {
+  children: ReactNode;
 }

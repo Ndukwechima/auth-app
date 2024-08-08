@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.bg-gradient {
+  @apply bg-gradient-to-br from-blue-900 via-blue-700 to-pink-500;
+}

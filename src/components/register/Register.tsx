@@ -27,7 +27,7 @@ const Register = () => {
   });
   return (
     <>
-      <section className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-700 to-pink-500 flex items-center justify-center">
+      <section className="min-h-screen bg-gradient flex items-center justify-center">
         <div className=" w-[90%] md:w-[80%] flex items-center bg-white shadow-2xl rounded-md md:rounded-none">
           {/* left side */}
 
