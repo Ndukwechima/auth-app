@@ -51,7 +51,7 @@ const Register = () => {
                 </p>
               </div>
 
-              <div className="mb-4">
+              <div className="mb-4 h-[9vh]">
                 <label
                   htmlFor="lastName"
                   className="block text-sm font-medium text-gray-700"
@@ -79,7 +79,7 @@ const Register = () => {
                 ) : null}
               </div>
 
-              <div className="mb-4">
+              <div className="mb-4 h-[9vh]">
                 <label
                   htmlFor="email"
                   className="block text-sm font-medium text-gray-700"
@@ -107,7 +107,7 @@ const Register = () => {
                 ) : null}
               </div>
 
-              <div className="mb-4">
+              <div className="mb-4 h-[9vh]">
                 <label
                   htmlFor="password"
                   className="block text-sm font-medium text-gray-700"
@@ -135,7 +135,7 @@ const Register = () => {
                 ) : null}
               </div>
 
-              <div className="mb-6">
+              <div className="mb-6 h-[9vh]">
                 <label
                   htmlFor="confirmPassword"
                   className="block text-sm font-medium text-gray-700"

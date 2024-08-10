@@ -63,7 +63,7 @@ const ResetPassword: React.FC = () => {
                 <p className="text-[10px] text-gray-500 text-center mb-6">
                   An OTP will be send to your mail. Proceed to the next step
                 </p>
-                <div className="mb-4 py-4">
+                <div className="mb-4 py-4 h-[12vh]">
                   <label
                     htmlFor="email"
                     className="block text-sm font-medium text-gray-700"
@@ -97,7 +97,7 @@ const ResetPassword: React.FC = () => {
                   Verify OTP
                 </h2>
 
-                <div className="mb-4">
+                <div className="mb-4 h-[9vh]">
                   <label
                     htmlFor="otp"
                     className="block text-sm font-medium text-gray-700"
@@ -125,7 +125,7 @@ const ResetPassword: React.FC = () => {
                   ) : null}
                 </div>
 
-                <div className="mb-4">
+                <div className="mb-4 h-[9vh]">
                   <label
                     htmlFor="newPassword"
                     className="block text-sm font-medium text-gray-700"
@@ -155,7 +155,7 @@ const ResetPassword: React.FC = () => {
                   ) : null}
                 </div>
 
-                <div className="mb-4">
+                <div className="mb-4 h-[9vh]">
                   <label
                     htmlFor="confirmPassword"
                     className="block text-sm font-medium text-gray-700"

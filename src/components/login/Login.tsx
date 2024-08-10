@@ -46,7 +46,7 @@ const Login: React.FC = () => {
               </p>
             </div>
 
-            <div className="mb-4 mt-8">
+            <div className="mb-4 mt-8 h-[9vh]">
               <label
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-700"
@@ -74,7 +74,7 @@ const Login: React.FC = () => {
               ) : null}
             </div>
 
-            <div className="mb-6 mt-8">
+            <div className="mb-6 mt-8 h-[9vh]">
               <label
                 htmlFor="password"
                 className="block text-sm font-medium text-gray-700"
