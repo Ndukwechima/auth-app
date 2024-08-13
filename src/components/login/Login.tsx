@@ -103,12 +103,14 @@ const Login: React.FC = () => {
             </div>
 
             <div>
-              <button
-                type="submit"
-                className="w-full bg-gradient-to-br from-blue-900 via-blue-700 to-pink-500 text-white py-2 px-4 rounded-md hover:opacity-90 transition ease-out duration-500 "
-              >
-                Login
-              </button>
+              <Link to="/dashboard">
+                <button
+                  type="submit"
+                  className="w-full bg-gradient-to-br from-blue-900 via-blue-700 to-pink-500 text-white py-2 px-4 rounded-md hover:opacity-90 transition ease-out duration-500 "
+                >
+                  Login
+                </button>
+              </Link>
               <div className="flex justify-between items-center mt-2">
                 <p className="text-sm">Forgot password?</p>
                 <Link

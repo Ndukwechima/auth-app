@@ -4,6 +4,7 @@ import Login from "./components/login/Login";
 import ResetPassword from "./components/resetPassword/ResetPassword";
 import Register from "./components/register/Register";
 import { PageProps } from "./interfaces";
+import HomeDashboard from "./components/dashboard";
 const App: React.FC = () => {
   const location = useLocation();
   return (
@@ -34,6 +35,7 @@ const App: React.FC = () => {
               </Page>
             }
           />
+          <Route path="/dashboard" element={<HomeDashboard />} />
         </Routes>
       </AnimatePresence>
     </div>
