@@ -1,57 +1,38 @@
-import { Routes, Route, useLocation } from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
-import Login from "./components/login/Login";
-import ResetPassword from "./components/resetPassword/ResetPassword";
-import Register from "./components/register/Register";
-import { PageProps } from "./interfaces";
-import HomeDashboard from "./components/dashboard";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Services from "./pages/Services";
+import Products from "./pages/Products";
+import DashboardHome from "./dashboardPages/DashboardHome";
+import Clients from "./dashboardPages/Clients";
+import Settings from "./dashboardPages/Settings";
+import Help from "./dashboardPages/Help";
+import MainLayout from "./Layouts/MainLayout";
+import DashboardLayout from "./Layouts/DashboardLayout";
+import Login from "./pages/login/Login";
+import Register from "./pages/register/Register";
+import ResetPassword from "./pages/resetPassword/ResetPassword";
+
 const App: React.FC = () => {
-  const location = useLocation();
   return (
-    <div>
-      <AnimatePresence mode="wait">
-        <Routes location={location} key={location.key}>
-          <Route
-            path="/"
-            element={
-              <Page>
-                <Register />
-              </Page>
-            }
-          />
-          <Route
-            path="/login"
-            element={
-              <Page>
-                <Login />
-              </Page>
-            }
-          />
-          <Route
-            path="/reset-password"
-            element={
-              <Page>
-                <ResetPassword />
-              </Page>
-            }
-          />
-          <Route path="/dashboard" element={<HomeDashboard />} />
-        </Routes>
-      </AnimatePresence>
-    </div>
+    <Routes>
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/products" element={<Products />} />
+      </Route>
+
+      <Route element={<DashboardLayout />}>
+        <Route path="/dashboard" element={<DashboardHome />} />
+        <Route path="/dashboard/clients" element={<Clients />} />
+        <Route path="/dashboard/settings" element={<Settings />} />
+        <Route path="/dashboard/help" element={<Help />} />
+      </Route>
+      <Route path="/register" element={<Register />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/reset-password" element={<ResetPassword />} />
+    </Routes>
   );
 };
-
-const Page: React.FC<PageProps> = ({ children }) => (
-  <motion.div
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    exit={{ opacity: 0 }}
-    transition={{ duration: 0.4 }}
-    className="p-4"
-  >
-    {children}
-  </motion.div>
-);
 
 export default App;
