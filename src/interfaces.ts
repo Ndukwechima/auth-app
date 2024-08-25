@@ -24,3 +24,15 @@ export interface OTPForm {
 export interface PageProps {
   children: ReactNode;
 }
+
+export interface ItemsInter {
+  imgs: string;
+  price: string;
+  info: string;
+  badge: string;
+}
+
+export interface RevenueData {
+  label: string;
+  revenue: number[];
+}
