@@ -78,16 +78,20 @@ const BarChart: React.FC = () => {
   };
 
   return (
-    <div className="w-4/5 h-96">
-      <h2 className="text-xl text-start text-gray-600 py-4">Monthly Revenue</h2>
-      <h1 className="text-2xl font-bold text-start text-gray-400">
-        ${" "}
-        <span className="text-2xl font-semibold text-start text-gray-800">
-          15,000
-        </span>
-      </h1>
-      <Bar data={data} options={options} />
-    </div>
+    <section className="w-[80%] flex justify-center items-center ">
+      <div className="w-4/5 max-h-[24vh]">
+        <h2 className="text-xl text-start text-gray-600 py-4">
+          Monthly Revenue
+        </h2>
+        <h1 className="text-2xl font-bold text-start text-gray-400">
+          ${" "}
+          <span className="text-2xl font-semibold text-start text-gray-800">
+            15,000
+          </span>
+        </h1>
+        <Bar data={data} options={options} />
+      </div>
+    </section>
   );
 };
 

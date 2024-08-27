@@ -8,13 +8,13 @@ const Sidebar: React.FC = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <div className=" flex flex-col bg-blue-50">
-      <div>
-        <Link to="/" className="text-lg font-bold text-black">
-          Logo
+    <div className="flex flex-col bg-blue-50">
+      <div className="flex justify-center items-center mt-6">
+        <Link to="/" className="text-xl font-bold text-blue-600">
+          V-Concept
         </Link>
       </div>
-      <aside className="h-[80vh] mt-[10rem] flex flex-col items-end justify-center">
+      <aside className="h-[80vh] mt-[4rem] flex flex-col items-end justify-center">
         <div className="w-64 h-[80vh] flex flex-col items-center p-4">
           <div className="h-[80vh] flex flex-col justify-between">
             <nav className="mt-10">

@@ -36,3 +36,12 @@ export interface RevenueData {
   label: string;
   revenue: number[];
 }
+
+export interface TableData {
+  name: string;
+  age: number;
+  email: string;
+  phone: string;
+  city: string;
+  country: string;
+}

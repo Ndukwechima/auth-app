@@ -3,7 +3,7 @@ import { ItemsInter } from "../interfaces";
 import Card from "../shared/Card";
 import BarChart from "../components/BarChart";
 import Activities from "../components/Activities";
-import Table from "../components/Table";
+import TableInfo from "../components/TableInfo";
 
 // Define cardItems as an array of objects
 const cardItems: ItemsInter[] = [
@@ -35,7 +35,7 @@ const cardItems: ItemsInter[] = [
 
 const DashboardHome: React.FC = () => (
   <div>
-    <div className="w-[97%] flex bg-white ml-4 py-4 shadow-sm h-[18vh] rounded-[1.5rem] mt-10">
+    <div className="w-[97%] flex bg-white ml-4 py-4 shadow-sm h-[18vh] rounded-2xl mt-10">
       {/* Cards Here */}
       {cardItems.map((item, i) => (
         <Card
@@ -47,17 +47,19 @@ const DashboardHome: React.FC = () => (
         />
       ))}
     </div>
-    <section className="flex w-[97%] justify-between ml-4">
-      <section className="w-[58%] border border-green-500 bg-white shadow-sm rounded-[1.5rem] mt-10 flex justify-center items-start">
+    <section className="flex w-[97%] mt-8 justify-between ml-4">
+      <section className="w-[58%] bg-white shadow-sm rounded-2xl">
         <BarChart />
       </section>
 
-      <div className="w-[40%] h-[56.3vh] flex justify-center items-center mt-[3rem] rounded-[1.5rem] overflow-y-hidden">
-        <div className="w-[100%] h-[66.3vh] mt-[2.6rem] bg-[url('assets/group.png')] bg-cover bg-center bg-no-repeat">
-          <div className="w-[100%] mt-[6rem] p-[4rem] overflow-x-hidden ">
-            <button className="bg-white py-1  px-4 rounded-full font-semibold">
-              Get Now
-            </button>
+      <div className="w-[40%] h-[34vh] flex rounded-2xl mb-5 overflow-hidden">
+        <div className="w-[100%] h-[40vh] bg-[url('assets/group.png')] bg-cover bg-center bg-no-repeat">
+          <div className=" px-[4rem] py-2 ">
+            <div className="pt-6">
+              <button className="bg-white py-1  px-4 rounded-full font-semibold">
+                Get Now
+              </button>
+            </div>
             <p className="w-[50%] text-white text-2xl font-bold pt-8">
               We have added new invoice templates!
             </p>
@@ -73,9 +75,13 @@ const DashboardHome: React.FC = () => (
         </div>
       </div>
     </section>
-    <section className="bg-white h-[30vh] shadow-sm">
-      <Activities />
-      <Table />
+    <section className="h-[36vh] shadow-sm flex w-[97%] justify-between ml-4 mt-10 rounded-2xl">
+      <div className="w-[37%] bg-white flex justify-center items-center rounded-2xl">
+        <Activities />
+      </div>
+      <div className="w-[60%] bg-white flex justify-center items-center  pb-[5rem] rounded-2xl">
+        <TableInfo />
+      </div>
     </section>
   </div>
 );
