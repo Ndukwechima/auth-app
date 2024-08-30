@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ThemeToggle from "./ThemeToggle";
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-blue-600 py-4 px-8 text-white flex justify-between items-center">
+    <header className="bg-blue-700  text-white dark:bg-gray-800 dark:text-white py-4 px-8 flex justify-between items-center shadow-md ">
       <div className="text-lg font-bold">Logo</div>
       <nav className="space-x-4">
         <Link to="/" className="text-lg font-semibold">
@@ -19,6 +20,7 @@ const Header: React.FC = () => {
           Register
         </Link>
       </nav>
+      <ThemeToggle />
     </header>
   );
 };

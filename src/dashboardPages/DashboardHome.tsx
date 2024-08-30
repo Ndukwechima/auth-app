@@ -52,8 +52,8 @@ const DashboardHome: React.FC = () => (
         <BarChart />
       </section>
 
-      <div className="w-[40%] h-[34vh] flex rounded-2xl mb-5 overflow-hidden">
-        <div className="w-[100%] h-[40vh] bg-[url('assets/group.png')] bg-cover bg-center bg-no-repeat">
+      <div className="w-[40%] h-[38vh] flex rounded-2xl mb-5">
+        <div className="w-[100%] bg-[url('assets/group.png')] bg-cover bg-center bg-no-repeat">
           <div className=" px-[4rem] py-2 ">
             <div className="pt-6">
               <button className="bg-white py-1  px-4 rounded-full font-semibold">
@@ -79,7 +79,8 @@ const DashboardHome: React.FC = () => (
       <div className="w-[37%] bg-white flex justify-center items-center rounded-2xl">
         <Activities />
       </div>
-      <div className="w-[60%] bg-white flex justify-center items-center  pb-[5rem] rounded-2xl">
+      <div className="w-[60%] bg-white flex flex-col px-4 py-4 pb-[5rem] rounded-2xl">
+        <h2 className="p-2 text-blue-600 font-bold">Recent Contacts</h2>
         <TableInfo />
       </div>
     </section>
