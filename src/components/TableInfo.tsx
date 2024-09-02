@@ -64,7 +64,8 @@ const StyledTableCell = styled(TableCell)(() => ({
 
 const DataTable: React.FC = () => {
   return (
-    <section className="h-[20vh]">
+    <section className="w-[100%] bg-white py-10 rounded-2xl">
+      <h2 className="px-4 py-2 text-blue-600 font-bold">Recent Contacts</h2>
       <TableContainer component={Paper}>
         <Table className="border-b-none">
           <TableHead>

@@ -18,10 +18,10 @@ const Sidebar: React.FC = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <div className="flex flex-col bg-blue-50">
+    <div className="w-[100%] bg-blue-50 hidden xl:flex flex-col">
       <div className="flex justify-center items-center mt-10">
         <Link to="/" className="text-xl font-bold text-blue-600">
-          V-Concept
+          T-Concept
         </Link>
       </div>
       <aside className="h-[80vh] mt-[4rem] flex flex-col items-end justify-center">

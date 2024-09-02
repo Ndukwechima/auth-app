@@ -34,8 +34,8 @@ const cardItems: ItemsInter[] = [
 ];
 
 const DashboardHome: React.FC = () => (
-  <div>
-    <div className="w-[97%] flex bg-white ml-4 py-4 shadow-sm h-[18vh] rounded-2xl mt-10">
+  <div className="w-[100%]">
+    <div className="w-[96%] mx-auto grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 py-4 h-[18vh] rounded-2xl mt-4">
       {/* Cards Here */}
       {cardItems.map((item, i) => (
         <Card
@@ -47,27 +47,29 @@ const DashboardHome: React.FC = () => (
         />
       ))}
     </div>
-    <section className="flex w-[97%] mt-8 justify-between ml-4">
-      <section className="w-[58%] bg-white shadow-sm rounded-2xl">
+    <section className="w-[96%] mx-auto grid grid-cols-1 gap-4 lg:grid-cols-2 ml-4 sm:ml-0 mt-[36rem] sm:mt-[12rem] md:mt-[12rem] lg:mt-[6rem]">
+      <section className="w-[100%] h-[40vh] lg:h-0 order-2 lg:order-1">
         <BarChart />
       </section>
 
-      <div className="w-[40%] h-[38vh] flex rounded-2xl mb-5">
+      <div className="w-[100%] lg:h-[38vh] flex rounded-2xl mb-5 order-1 lg:order-2">
         <div className="w-[100%] bg-[url('assets/group.png')] bg-cover bg-center bg-no-repeat">
-          <div className=" px-[4rem] py-2 ">
+          <div className="w-[100%] px-[4rem] py-2 ">
             <div className="pt-6">
               <button className="bg-white py-1  px-4 rounded-full font-semibold">
                 Get Now
               </button>
             </div>
-            <p className="w-[50%] text-white text-2xl font-bold pt-8">
-              We have added new invoice templates!
-            </p>
-            <p className="w-[60%] text-[#e2e1e1] font-bold pt-6">
-              New templates focus on helping you improve your business
-            </p>
             <div className="">
-              <button className="bg-white py-2 px-[12rem] rounded-lg font-semibold mt-[4rem]">
+              <p className="w-[100%] lg:w-[100%] text-white text-2xl font-bold pt-8">
+                We have added new invoice templates!
+              </p>
+              <p className="w-[100%] lg:w-[100%]  text-[#e2e1e1] font-bold pt-6">
+                New templates focus on helping you improve your business
+              </p>
+            </div>
+            <div>
+              <button className="w-[100%] bg-white py-2 rounded-lg font-semibold md:mt-[4rem] ">
                 Download Now
               </button>
             </div>
@@ -75,12 +77,11 @@ const DashboardHome: React.FC = () => (
         </div>
       </div>
     </section>
-    <section className="h-[36vh] shadow-sm flex w-[97%] justify-between ml-4 mt-10 rounded-2xl">
-      <div className="w-[37%] bg-white flex justify-center items-center rounded-2xl">
+    <section className="w-[96%] mx-auto grid grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-3 justify-start ml-[1.3rem] sm:ml-0 shadow-sm mt-10 rounded-2xl">
+      <div>
         <Activities />
       </div>
-      <div className="w-[60%] bg-white flex flex-col px-4 py-4 pb-[5rem] rounded-2xl">
-        <h2 className="p-2 text-blue-600 font-bold">Recent Contacts</h2>
+      <div className=" col-span-2 flex flex-col">
         <TableInfo />
       </div>
     </section>

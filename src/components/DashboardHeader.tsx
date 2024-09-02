@@ -5,8 +5,8 @@ import { IoIosSearch } from "react-icons/io";
 
 const DashboardHeader: React.FC = () => {
   return (
-    <header className=" py-4 pl-10 pr-[4rem] bg-blue-700  text-white dark:bg-gray-800 dark:text-white flex justify-between items-center">
-      <div className="w-[30%] text-lg font-bold ">
+    <header className=" py-4 pl-10 pr-[4rem] text-gray-800 dark:bg-gray-800 dark:text-white flex justify-between items-center">
+      <div className="w-[30%] text-lg font-bold hidden xl:block ">
         <h3>
           Welcome back <span className="text-blue-600">Chima!</span>
         </h3>
@@ -17,10 +17,10 @@ const DashboardHeader: React.FC = () => {
         <input
           type="text"
           placeholder="Tap to search"
-          className="w-[60%] bg-blue-50 px-6 py-[6px] outline-none rounded-md"
+          className="w-[20%] md:w-[60%] md:bg-blue-50 px-6 py-[6px] outline-none rounded-md"
         />
       </div>
-      <div className="w-[20%] flex justify-end space-x-4 ">
+      <div className="w-[30%] md:w-[20%] flex justify-end space-x-4">
         <div className="relative">
           <div className="w-5 h-5 rounded-full text-white bg-blue-700 flex justify-center items-center absolute top-0 ">
             <p className="font-bold">2</p>

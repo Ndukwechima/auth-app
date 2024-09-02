@@ -78,8 +78,8 @@ const BarChart: React.FC = () => {
   };
 
   return (
-    <section className="w-[80%] flex justify-center items-center ">
-      <div className="w-4/5 max-h-[24vh]">
+    <section className=" w-[96%] md:w-[100%] bg-white pb-[6.6rem] flex justify-center items-center rounded-2xl shadow-sm ">
+      <div className="w-4/5 max-h-[28vh]">
         <h2 className="text-xl text-start text-gray-600 py-4">
           Monthly Revenue
         </h2>

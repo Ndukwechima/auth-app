@@ -5,13 +5,15 @@ import { Outlet } from "react-router-dom";
 
 const DashboardLayout: React.FC = () => {
   return (
-    <div className="flex bg-blue-50 ">
-      <Sidebar />
+    <div className="flex bg-blue-50">
+      <div>
+        <Sidebar />
+      </div>
       <div className="flex-1">
-        <div className="pt-4">
+        <div>
           <DashboardHeader />
         </div>
-        <main className="p-4">
+        <main>
           <Outlet />
         </main>
       </div>

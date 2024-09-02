@@ -7,7 +7,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ imgs, price, info, badge }) => {
   return (
-    <div className="w-[100%] border-r-2 flex items-center">
+    <div className="w-[100%] bg-white px-4 py-10  flex items-center rounded-2xl">
       <div className="w-[100%] ">
         <div className=" w-[80%] flex justify-center items-center space-x-2">
           <div>

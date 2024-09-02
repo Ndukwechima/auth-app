@@ -5,7 +5,7 @@ import ThemeToggle from "./ThemeToggle";
 const Header: React.FC = () => {
   return (
     <header className="bg-blue-700  text-white dark:bg-gray-800 dark:text-white py-4 px-8 flex justify-between items-center shadow-md ">
-      <div className="text-lg font-bold">Logo</div>
+      <div className="text-lg font-bold">T-Concept</div>
       <nav className="space-x-4">
         <Link to="/" className="text-lg font-semibold">
           Home
